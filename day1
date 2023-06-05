@@ -1,0 +1,16 @@
+#day 1
+
+a=19
+b=4
+(add=a+b)
+(multip=a*b)
+sname= c('Ali','mohammed')
+sgrade=c(50,90)
+
+(midrange=120+300/2)
+x = c(10,20,30,40,50,60)
+y = c(25,30,35,35,40,45)
+mean(x)
+mean(y)
+var(x)
+var(y)
