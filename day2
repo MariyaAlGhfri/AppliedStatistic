@@ -1,0 +1,22 @@
+
+#day 2
+
+num=c(8,10,12)
+price=c(10000,12000,8000)
+weighted.mean(price,num)
+weighted.mean((10000*8+12000*10+8000*12)/30)
+
+
+
+#FIND Z-score
+A=c(44,39,22,50,64)
+m=mean(A)
+stander=sd(A)
+zscor=((A-m)/stander)
+
+
+B=c(22,20,18,30.11)
+m=mean(B)
+stander=sd(B)
+zscor=((B-m)/stander)
+
