@@ -20,3 +20,16 @@ m=mean(B)
 stander=sd(B)
 zscor=((B-m)/stander)
 
+#boxplot
+set.seed(123)
+rand = rnorm(100,10,3)
+boxplot(rand,horizontal = TRUE, col = "red")
+fivenum(rand)
+summary(rand)
+rand[5]=rand[5]+50
+rand[50]
+rand[50]=rand[50]-20
+boxplot(rand[-3])
+boxplot(rand[-c(3,50)])
+boxplot(rand,horizontal = TRUE, col = "red", outline = FALSE)
+
