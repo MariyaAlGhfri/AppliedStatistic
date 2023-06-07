@@ -1,0 +1,8 @@
+a=c(1,4,4,4,5,5,5,8)
+b=c(1,2,3,4,5,6,7,8)
+
+boxplot(a,horizontal = FALSE,col="brown",main = "sample A")
+
+hist(a, col="pink",main = "sample B",xlab ="x")
+par(mfrow=c(1,2))
+hist(a, breaks=4, main="sample C")
