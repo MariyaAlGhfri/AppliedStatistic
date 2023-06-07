@@ -1,0 +1,11 @@
+
+#cone volume
+
+import math
+pi = math.pi
+
+def volume(r, h):
+    return (1 / 3) * pi * r * r * h
+radius = 4
+height = 7
+print( "volume is: ", volume(radius, height) )
