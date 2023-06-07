@@ -1,0 +1,9 @@
+
+#get price after discount
+
+price = float(input("enter the price: "))
+discount = float(input("enter the percentage of discount: "))
+
+discount=price-(price*(discount/100))
+
+print("Price after discount:", discount)
