@@ -1,0 +1,9 @@
+
+#find number of word in text
+
+text = input("Enter text: ").split()
+word="codeacademy"
+if word in text:
+    print( "I found codeacademy at ",text.index(word) + 1) 
+else:
+    print( "I do not find codeacademy")
