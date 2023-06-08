@@ -1,0 +1,41 @@
+
+library(readr)
+Sleepdata <- read_csv("C:/Users/user/Desktop/Mariya/week5/project1/Sleep_health_and_lifestyle_dataset.csv")
+View(Sleepdata)
+
+#summary all data
+summary(Sleepdata)
+#show type data 13 variable,observatens 347
+str(Sleepdata)
+
+boxplot(`Physical Activity Level`,horizontal = TRUE, col = 'pink',main="Physical Activity Level")
+boxplot(Age,horizontal=TRUE,col = 'brown',main="Age")
+par(mfrow=c(2,1))
+
+boxplot(Age ~ Gender,horizontal = TRUE, col=c('green','blue'))
+boxplot(Age~`Physical Activity Level`,horizontal = TRUE)
+
+
+
+#linear model 
+
+
+x$sp=x$`Sleep Duration`
+x$st=x$`Stress Level`
+attach(x)
+cor(st,sp)
+plot(st,sp)
+model01=lm(st ~sp)
+abline(model01, col='red')
+
+
+
+#subset data male
+mydata= x[x$Gender=="Male",]
+summary(mydata)
+boxplot(mydata, col = "green")
+
+#bar graph
+barplot(table(Sleepdata$Occupation),col=rainbow(11), main = "occupation")
+par(bg="pink")
+
